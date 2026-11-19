@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 
 export default function Home() {
@@ -71,7 +72,7 @@ export default function Home() {
           </button>
           {menuOpen && (
             <div className="mt-2 bg-black/80 backdrop-blur-md border border-[#d4af37]/50 rounded-2xl overflow-hidden shadow-[0_0_25px_rgba(0,0,0,0.8)]">
-              {nav.map((item, i) => (
+              {nav.map((item) => (
                 <a key={item.label} href={item.href} onClick={() => setMenuOpen(false)} className="flex items-center justify-between px-5 py-3.5 text-[#f5e6b8] font-serif italic text-[15px] active:bg-[#d4af37] active:text-black transition border-b border-white/5 last:border-0">
                   <span className="flex items-center gap-2.5"><span className="text-[9px] text-[#d4af37]">◆</span>{item.label}</span>
                   <span className="text-[#d4af37] text-[12px]">→</span>
