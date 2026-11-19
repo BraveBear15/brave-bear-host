@@ -25,7 +25,6 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-black text-white relative overflow-x-hidden">
-      {/* ===== HOMEPAGE - background.jpg - FIXED FOR MOBILE ===== */}
       <div className="absolute top-0 left-0 right-0 h-[100svh] min-h-[620px] bg-cover bg-[position:center_30%] sm:bg-center bg-no-repeat" style={{ backgroundImage: "url('/background.jpg')" }} />
       <div className="absolute top-0 left-0 right-0 h-[100svh] min-h-[620px] bg-black/45 sm:bg-black/20 z-[1]" />
       <div className="absolute top-[calc(100svh-180px)] left-0 right-0 h-[180px] bg-gradient-to-t from-black via-black/40 to-transparent pointer-events-none z-[5]" />
@@ -38,8 +37,6 @@ export default function Home() {
               </div>
             </div>
           </a>
-
-          {/* ===== CLASSICAL TOP MENU - DESKTOP ===== */}
           <div className="hidden md:flex flex-col items-end mt-2">
             <div className="flex items-center gap-1.5">
               {nav.map((item, i) => (
@@ -55,8 +52,6 @@ export default function Home() {
             </div>
             <p className="font-serif italic text-[10px] tracking-[3px] text-[#f5e6b8]/60 mt-1.5 pr-1">BRAVE BEAR HOST • EST. WITH HONOUR</p>
           </div>
-
-          {/* ===== ICONS - PHONE - ONLY FACEBOOK + INSTAGRAM ===== */}
           <div className="flex gap-2 mt-1 sm:mt-3 shrink-0">
             <a href="https://facebook.com/bravebearhost" target="_blank" aria-label="Facebook" className="w-11 h-11 sm:w-10 sm:h-10 rounded-full bg-[#1877F2] flex items-center justify-center font-black text-[19px] shadow-[0_0_15px_rgba(24,119,242,0.6)] active:scale-95 hover:scale-110 transition">f</a>
             <a href="https://instagram.com/bravebearhost" target="_blank" aria-label="Instagram" className="w-11 h-11 sm:w-10 sm:h-10 rounded-full bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-600 flex items-center justify-center shadow-[0_0_15px_rgba(236,72,153,0.6)] active:scale-95 hover:scale-110 transition">
@@ -64,8 +59,6 @@ export default function Home() {
             </a>
           </div>
         </div>
-
-        {/* ===== MENU - MADE FOR PHONE - ONE BUTTON - TAP TO OPEN ===== */}
         <div className="md:hidden mt-3">
           <button onClick={() => setMenuOpen(!menuOpen)} className="w-full flex items-center justify-between bg-gradient-to-b from-[#ffe9a8] via-[#d4af37] to-[#a67c00] border border-[#ffe9a8] text-black font-black px-5 py-3.5 rounded-full text-[14px] tracking-[2px] shadow-[0_0_20px_rgba(212,175,55,0.5)] active:scale-[0.98] transition">
             <span>{menuOpen ? "✕  CLOSE MENU" : "☰  MENU - TAP TO SEE ALL"}</span>
@@ -85,7 +78,6 @@ export default function Home() {
             </div>
           )}
         </div>
-
         <div className="flex-1" />
         <div className="flex flex-col gap-4 mb-6 bg-black/55 sm:bg-transparent backdrop-blur-sm sm:backdrop-blur-none rounded-2xl p-4 sm:p-0 border border-white/10 sm:border-0">
           <div className="drop-shadow-[0_2px_8px_rgba(0,0,0,1)]">
@@ -101,10 +93,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-
       {goldDivider}
-
-      {/* ===== PAGE 2 - SERVICES ===== */}
       <div id="services" className="relative z-10">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/background2.jpg')" }} />
         <div className="absolute inset-0 bg-black/35" />
@@ -148,10 +137,7 @@ export default function Home() {
           <p className="text-center text-[11px] tracking-[3px] text-yellow-100/50 mt-3 font-serif italic">Tap to Call &nbsp;•&nbsp; Tap to Email</p>
         </div>
       </div>
-
       {goldDivider}
-
-      {/* ===== PAGE 3 - CUSTOM WEBSITE ===== */}
       <div id="custom-website" className="relative z-10">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/background2.jpg')" }} />
         <div className="absolute inset-0 bg-black/35" />
@@ -194,10 +180,7 @@ export default function Home() {
           <p className="text-center text-[11px] tracking-[3px] text-yellow-100/50 mt-3 font-serif italic">Tap to Call &nbsp;•&nbsp; Tap to Email</p>
         </div>
       </div>
-
       {goldDivider}
-
-      {/* ===== PAGE 4 - WEB SYSTEMS ===== */}
       <div id="web-systems" className="relative z-10">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/background2.jpg')" }} />
         <div className="absolute inset-0 bg-black/35" />
@@ -239,10 +222,7 @@ export default function Home() {
           <p className="text-center text-[11px] tracking-[3px] text-yellow-100/50 mt-3 font-serif italic">Tap to Call &nbsp;•&nbsp; Tap to Email</p>
         </div>
       </div>
-
       {goldDivider}
-
-      {/* ===== PAGE 5 - MANAGEMENT SYSTEMS ===== */}
       <div id="management" className="relative z-10">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/background2.jpg')" }} />
         <div className="absolute inset-0 bg-black/35" />
@@ -285,10 +265,7 @@ export default function Home() {
           <p className="text-center text-[11px] tracking-[3px] text-yellow-100/50 mt-3 font-serif italic">Tap to Call &nbsp;•&nbsp; Tap to Email</p>
         </div>
       </div>
-
       {goldDivider}
-
-      {/* ===== PAGE 6 - BUSINESS SYSTEMS ===== */}
       <div id="business" className="relative z-10">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/background2.jpg')" }} />
         <div className="absolute inset-0 bg-black/35" />
@@ -336,10 +313,7 @@ export default function Home() {
           <p className="text-center text-[11px] tracking-[3px] text-yellow-100/50 mt-3 font-serif italic">Tap to Call &nbsp;•&nbsp; Tap to Email</p>
         </div>
       </div>
-
       {goldDivider}
-
-      {/* ===== PAGE 7 - BOOKING SYSTEMS ===== */}
       <div id="booking" className="relative z-10">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/background2.jpg')" }} />
         <div className="absolute inset-0 bg-black/35" />
@@ -388,10 +362,7 @@ export default function Home() {
           <p className="text-center text-[11px] tracking-[3px] text-yellow-100/50 mt-3 font-serif italic">Tap to Call &nbsp;•&nbsp; Tap to Email</p>
         </div>
       </div>
-
       {goldDivider}
-
-      {/* ===== PAGE 8 - HOSTING PLANS ===== */}
       <div id="hosting" className="relative z-10">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/background2.jpg')" }} />
         <div className="absolute inset-0 bg-black/35" />
@@ -453,10 +424,7 @@ export default function Home() {
           <p className="text-center text-[11px] tracking-[3px] text-yellow-100/50 mt-3 font-serif italic">Tap to Call &nbsp;•&nbsp; Tap to Email</p>
         </div>
       </div>
-
       {goldDivider}
-
-      {/* ===== PAGE 9 - ABOUT ===== */}
       <div id="about" className="relative z-10">
         <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{ backgroundImage: "url('/background2.jpg')" }} />
         <div className="absolute inset-0 bg-black/45" />
@@ -547,7 +515,6 @@ export default function Home() {
           <p className="text-center font-serif italic text-[#f5e6b8]/60 text-[12px] mt-4">Brave Bear Host © 2026 • Strong Website. Smart System.</p>
         </div>
       </div>
-
     </div>
   );
 }
