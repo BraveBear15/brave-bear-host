@@ -20,22 +20,9 @@ export default function Home() {
   ];
 
   const goldDivider = (
-    <div className="relative z-20 bg-black py-4 overflow-hidden">
+    <div className="relative z-20 bg-black py-3 overflow-hidden">
       <div className="h-[5px] bg-gradient-to-r from-transparent via-[#ffe9a8] to-transparent shadow-[0_0_20px_rgba(212,175,55,0.9)]" />
-      <div className="h-[3px] bg-gradient-to-r from-transparent via-cyan-300 to-transparent mt-[2px] shadow-[0_0_15px_rgba(56,189,248,0.8)]" />
-      <div className="h-[5px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mt-[2px] shadow-[0_0_20px_rgba(212,175,55,0.9)]" />
-      <div className="flex items-center justify-center gap-3 mt-3">
-        <span className="h-px w-12 sm:w-20 bg-[#d4af37]" />
-        <span className="text-[#d4af37] text-[14px]">◆</span>
-        <span className="bg-gradient-to-b from-[#ffe9a8] via-[#d4af37] to-[#a67c00] text-black font-black text-[10px] sm:text-[11px] tracking-[3px] px-4 py-1.5 rounded-full border border-[#ffe9a8] shadow-[0_0_20px_rgba(212,175,55,0.7)] whitespace-nowrap">
-          ◆ BRAVE BEAR HOST ◆
-        </span>
-        <span className="text-[#d4af37] text-[14px]">◆</span>
-        <span className="h-px w-12 sm:w-20 bg-[#d4af37]" />
-      </div>
-      <p className="text-center text-[9px] tracking-[4px] text-white/40 mt-2 font-serif italic">
-        — END OF SECTION — SCROLL FOR MORE —
-      </p>
+      <div className="h-[5px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mt-[3px] shadow-[0_0_20px_rgba(212,175,55,0.9)]" />
     </div>
   );
 
@@ -47,11 +34,7 @@ export default function Home() {
       <div className="relative z-10 max-w-7xl mx-auto px-3 sm:px-6 pt-2 pb-4 min-h-[100svh] flex flex-col overflow-x-hidden">
         <div className="flex justify-between items-start gap-2">
           <a href="/" className="flex flex-col items-start -mt-1 -ml-1 shrink-0">
-            <div className="p-[2px] rounded-[16px] bg-gradient-to-b from-[#ffe9a8] via-[#d4af37] to-[#8b6f00] shadow-[0_0_18px_rgba(212,175,55,0.4)]">
-              <div className="rounded-[14px] bg-black/40 p-1.5">
-                <img src="/logo.png" alt="Brave Bear Host" className="h-14 sm:h-24 w-auto object-contain drop-shadow-[0_0_20px_rgba(0,0,0,0.9)]" />
-              </div>
-            </div>
+            <img src="/logo.png" alt="Brave Bear Host" className="h-14 sm:h-24 w-auto object-contain drop-shadow-[0_0_20px_rgba(0,0,0,0.9)]" />
           </a>
           <div className="hidden md:flex flex-col items-end mt-2">
             <div className="flex items-center gap-1.5">
